@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/background.jpg);
+    font-family: 'Indie Flower', cursive;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: #0a63bc;
+}
+.cartao{
+    color: #fff;
+    width: 400px;
+    background-color: #000;
+    border: 2px solid #008ac7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.info-pessoais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8em;
+}
+.info-pessoais img{
+    border: 2px solid #55d1fe;
+    border-radius: 50%;
+    margin: .8em;
+}
+.info-pessoais h1{
+    font-size: 1.5em;
+}
+.info-pessoais h2{
+    font-size: 1.4em;
+}
+.info-sobre .abas .aba{
+    transition: .5s;
+}
+.info-sobre .aba.selecionada{
+    background: #fff;
+}
+.info-sobre .abas{
+    display: flex;
+}
+.info-sobre .aba:hover{
+    background: #ccc;
+    transition: .5s;
+}
+.info-sobre li{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+    padding: .3em;
+    cursor: pointer;
+    background: #0a63bc;
+}
+.info-sobre li img{
+    width: 35px;
+}
+.informacao, .contatos{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    overflow: auto;
+}
+.informacao p{
+    text-align: justify;
+    padding: 0 10px;
+}
+.informacao{
+    display: none;
+
+}
+.informacao.selecionada{
+    display: block;
+    height: 25em;
+}
+#informacao-redes ul{
+    padding-top: 7em;
+}
+.titulo-aba{
+    font-size: 1.2em;
+    text-align: center;
+    margin: .3em 0 .7em;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+}
+.redes-sociais li{
+    border-radius: 25px;
+}
+.redes-sociais li a{
+    display: block;
+    width: 12em;
+    padding: .8em;
+    text-align: center;
+}
+.redes-sociais li:hover{
+    opacity: .5;
+    transition: .5s;
+}
+.redes-sociais .github{
+    background: #000;
+    border-radius: 25px;
+}
+.redes-sociais .linkedin{
+    background: #0a63bc;
+}
+.redes-sociais .instagram{
+    background: linear-gradient(to top right, orange,red,purple);
+    margin-bottom: .8em;
+}
